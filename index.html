@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="banner">
+            <div class="banner-logo">
+                <img src="https://www.skillfinder.com.au/media/wysiwyg/the-odin-project-logo-skill-finder-partners-page.png" alt="logo-the-odin-project">
+            </div>
+            <p><a href="www.unsplash.com">Photo by Unsplash.com</a></p>
+        </div>
+        <div class="signUpForm">
+            <div class="introText">
+                <main>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis expedita recusandae totam soluta? Quidem ab dicta autem rec</p>
+                    <p><em>You know what to do</em>.</p>
+                </main>
+            </div>
+            <form action="www.google.com" method="post" name='post-form'>
+                    <h3>Lets do this</h3>
+                    <div>
+                        <label for="firstname">FirstName</label>
+                        <input autofocus type="text" name="firstname" id="input" class='input' placeholder="Your name..." required/>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="input" class='input' placeholder="name@provider.nl/com" required/>
+                        <label for="password">Password</label>
+                        <input type="password" minlength='3' name="password" id="password1" class='password input' required/>
+                    </div>
+                    <div>
+                        <label for="lastname">LastName</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Your lastname..." required>
+                        <label for="phone">Phone number</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Your phone number..." required>
+                        <label for="passwordConfirm" >Password <em>confirm</em></label>
+                        <input type="password" minlength='3' name="passwordConfirm" id="password2" required>
+                    </div>
+                </form>
+                <button type="submit" form='post-form' value='create account' id='submit' onclick="password()">Create Account</button>
+                <a href="www.google.com">Already have an account? <span>Login</span></a>
+        </div>
+    </div>
+    
+</body>
+</html>
